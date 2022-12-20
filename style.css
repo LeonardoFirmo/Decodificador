@@ -111,6 +111,8 @@ header{
     border-radius: 15px;
     position: relative;
     height: 80vh;
+    padding-bottom: 0vh;
+    
 }
 
 #img-encontrar{
@@ -145,6 +147,8 @@ header{
     border-radius: 15px;
     font-size: 1.3rem;
     text-align:left;
+    overflow-y: auto;
+ 
 }
 
 body{
@@ -251,7 +255,9 @@ body{
         font-size: 0.7rem;
     }
     #paragrafo-resultado{
+        padding: 0;
         min-width: 280px;
+        min-height: 100%;
   
     }
 
