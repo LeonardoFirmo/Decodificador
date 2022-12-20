@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Decrypt</title>
+</head>
+<body>
+    
+
+    <main class="container">
+       
+
+        <section class="entrada-texto">
+            <header>
+                <img id="logo" src="./assets/img/Vector.png" alt="logotipo">
+            </header>
+
+            <textarea style="resize: none" id="inputTexto"placeholder="Digite seu texto"  name="inputTexto" id="" cols="30" rows="8"></textarea>
+         
+
+            
+            <div class="buttons">
+                
+                <p><img id="exclamacao" src="./assets/img/exclam.png" alt=""> Apenas letras minúsculas e sem acento.</p>
+                <button class="button buttonColorido" id="bt-1">Criptografar</button>
+                <button class="button buttonColorido" id="bt-2">Descriptografar</button>
+            </div>
+        </section>
+
+   
+
+       
+        <div class="descriptografado">
+            <div class="itensDescriptografados">
+                <img id="img-encontrar" src="./assets/img/High quality products 1 1.png" alt="imagem ao não encontrar mensagem">
+
+                <h3>Nenhuma mensagem encontrada</h2>
+                <p class="p-descripto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                
+            </div>
+            
+            <p id="paragrafo-resultado" style="display: none;"></p>
+            <button class="button buttonColorido" id="bt-3">Copiar</button>
+        </div>
+        
+
+
+    </main>
+    
+    
+</body>
+</html>

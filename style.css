@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F5FC;
+    
+}
+
+
+
+
+
+main{
+ 
+    padding: 8vh 5vw 3vh 5vw ;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+
+
+
+header{
+    padding-left: 3vw;
+}
+#logo{
+    
+    height: 31px;
+}
+
+.entrada-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+#inputTexto{
+    margin:5vh 0px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #0A3871;
+    margin-left: 15%;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    width: 70%;
+    height: 50%;
+}
+
+#inputTexto::placeholder {
+    color: #0A3871;
+
+}
+
+#exclamacao{
+    height: 3vh;
+    margin: 0 0.2vw;
+}
+
+
+.buttons{
+    margin-left: 15%;
+    height: 20vh;
+}
+.button{
+    margin-top: 3vh;
+    margin-right:1vw ;
+    border-radius: 18px;
+    width: 200px;
+    height: 50px;
+    border: solid #0A3871 1px;
+}
+
+#bt-1{
+    background-color: #0A3871;
+    color: #D8DFE8;
+   
+}
+
+
+#bt-2{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    
+}
+.buttonColorido:hover{
+    background-color: #FD9E02!important;
+    color: #D8DFE8!important;
+
+}
+
+
+
+
+
+
+
+.descriptografado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5vh 0vw;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    height: 80vh;
+}
+
+#img-encontrar{
+    height: 280px;
+}
+#img-encontrar,h3,.p-descripto{
+    margin-top: 2vh;
+}
+.itensDescriptografados{
+    width: 80%;
+    text-align: center;
+}
+
+.itensDescriptografados,#img-encontrar,h3,.p-descripto{
+    background-color: #FFFFFF;
+}
+
+
+.p-descripto{
+    
+    font-size: 0.8rem;
+    text-align:left;
+}
+
+
+#paragrafo-resultado{
+    padding: 5vh;
+    min-width: 387px;
+    min-height: 80vh;
+    max-width: 400px;
+    background-color:#fff;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    text-align:left;
+}
+
+body{
+    position: relative;
+}
+#bt-3{
+    position: absolute;
+    bottom:5%;
+    display: none;
+}
+
+
+
+
+
+@media (max-width:1100px) {
+    .container{
+
+    }
+    #img-encontrar{
+        height: 180px;
+    }
+    .button{
+        width: 150px;
+        height: 50px;
+    }
+    
+}
+
+@media (max-width:850px) {
+   main{
+    padding: 8vh 2vw 3vh 2vw ;
+   } 
+
+   #paragrafo-resultado{
+    padding: 5vh;
+    min-width: 280px;
+    min-height: 30vh;
+   }
+
+} 
+
+
+@media (max-width:700px) {
+    .container{
+        width: 90vw;   
+        margin: 0 auto;   
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons{
+       
+      
+        min-width: 200px;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+       
+    }
+    .button{
+        
+        min-width: 45%;
+        max-width: 230px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .descriptografado{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+
+    }
+    #inputTexto{
+        font-size: 1.5rem;
+    }
+
+    #img-encontrar{
+        display: none;
+    }
+
+}
+
+
+@media (max-width:430px) {
+    .buttons{
+        margin: 0 auto;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        align-items: center;
+       
+       
+    }
+    .button{
+       width: 234px;
+       
+    }
+    #inputTexto{
+        font-size: 1.2rem;
+    }
+    .buttons p{
+        font-size: 0.7rem;
+    }
+    #paragrafo-resultado{
+        min-width: 280px;
+  
+    }
+
+    
+}
