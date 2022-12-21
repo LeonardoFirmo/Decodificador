@@ -24,7 +24,8 @@ main{
 
 
 header{
-    padding-left: 3vw;
+    display: flex;
+    padding-left: 5vw;
 }
 #logo{
     
@@ -266,9 +267,17 @@ body{
     
     }
     #paragrafo-resultado{
-        padding: 5vh 5vw 30vh 5vw;
-        min-height: 50vh;
+        position: relative;
+        /* padding: 5vh 5vw 30vh 5vw; */
+        padding: 0;
+        /* min-height: 50vh; */
+        /* max-height: 5vh; */
   
+    }
+
+    #bt-3{
+        position: absolute;
+        bottom: 0;
     }
 
     
