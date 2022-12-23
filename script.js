@@ -76,33 +76,30 @@ function descriptografar() {
 }
 
 
-buttonCopia.addEventListener('click',copiaTextoGerado);
+
 
 function renderizaCriptografia(palavraCriptografada) {
 
     buttonCopia.style.display = 'block';
     itensDescriptografados.style.display = 'none';
     paragrafoResultado.style.display = 'block';
-   
+    paragrafoResultado.innerHTML=''
+    buttonCopia.addEventListener('click',copiaTextoGerado(palavraCriptografada));
 
 
-    dataUser = palavraCriptografada
     paragrafoResultado.innerHTML = palavraCriptografada;
-
-    
 
 }
 
-function copiaTextoGerado() {
-
+function copiaTextoGerado(palavraCriptografada) {
+    
     const textoUsuarioInicial = input.value
     
-    input.value = dataUser
+    input.value = palavraCriptografada
     input.select() 
     document.execCommand("copy")
     input.value = textoUsuarioInicial
    
     
-   
 }
 
